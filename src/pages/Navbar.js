@@ -21,7 +21,7 @@ function NavBar() {
         <Link className="home" to="#home">
             Home
         </Link>
-        <Link className="services" to="#services">
+        <Link className="services" to='#services' smooth >
             Services
         </Link>
         <Link className="products" to="#products">
