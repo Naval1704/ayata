@@ -11,10 +11,11 @@ import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Client from './pages/Client';
 import Footer from './pages/Footer';
-
+// import Stars from "./pages/Stars";
 function App() {
   return (
     <div className="App">
+      {/* <Stars/> */}
       <Cursor/>
       <NavBar/>
       <div className="pages">

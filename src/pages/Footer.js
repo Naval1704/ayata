@@ -1,8 +1,8 @@
 import React from "react";
 import "../pages/Footer.css";
-import { AiFillInstagram } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -23,9 +23,11 @@ function Footer() {
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <AiFillInstagram className="social-icon" />
-            <BsTwitter className="social-icon" />
-            <FaLinkedinIn className="social-icon" />
+            <FaInstagram className="social-icons" />
+
+            <FaXTwitter className="social-icons" />
+
+            <IoLogoLinkedin className="social-icons" />
           </div>
         </div>
       </div>

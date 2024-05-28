@@ -13,7 +13,7 @@ function Home() {
         </p>
         <a href="#products" className="home-link">Explore ViShruti™</a>
       </div>
-      <div className="animation-background"></div>
+      {/* <div className="animation-background"></div> */}
     </div>
   );
 }

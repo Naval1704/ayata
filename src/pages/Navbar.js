@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
-import logo from '../pages/assets/logo.png';
+// import logo from '../pages/assets/logo.png';
 import './NavBar.css';
 
 function NavBar() {
@@ -15,35 +15,36 @@ function NavBar() {
     <div className='navBar'>
       <div className="logo">
         <Link className="logo" to="#">
-           <img src={logo} alt="Ayata Intelligence Logo"></img> <h2>Ayata Intelligence</h2>
+           {/* <img src={logo} alt="Ayata Intelligence Logo"></img>  */}
+           <h2>Ayata Intelligence</h2>
         </Link>
       </div>
       <div className={`components ${menuOpen ? 'open' : ''}`}>
-        <Link className="home" to="#home" smooth >
+        <Link className="home" to='#' smooth >
             Home
         </Link>
-        <Link className="services" to='#services' smooth >
+        <Link className="services" to="#services" smooth >
             Services
         </Link>
-        <Link className="products" to="#products">
+        <Link className="products" to="#products" smooth >
             Products
         </Link>
-        <Link className="training" to="#training">
+        <Link className="training" to="#training" smooth >
             Training
         </Link>
-        <Link className="achievements" to="#achievements">
+        <Link className="achievements" to="#achievements" smooth >
             Achievements
         </Link>
-        <Link className="team" to="#team">
+        <Link className="team" to="#team" smooth >
             Team
         </Link>
-        <Link className="careers" to="#careers">
+        <Link className="careers" to="#careers" smooth >
             Career
         </Link>
-        <Link className="contacts" to="#contacts">
+        <Link className="contacts" to="#contacts" smooth >
             Contact Us
         </Link>
-        <Link className="clients" to="#clients">
+        <Link className="clients" to="#clients" smooth >
             Our Clients
         </Link>
       </div>

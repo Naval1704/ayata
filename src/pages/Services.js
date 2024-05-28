@@ -6,8 +6,7 @@ import IoTImage from "../pages/assets/iot.jpg";
 function Services() {
   return (
     <div id="services" className="services-container">
-      <div className="background-animation"></div>
-      <h2 className="services-heading">Our Expertise</h2>
+      <h2 className="services-heading">Our Services</h2>
       <div className="content">
         <div className="service">
           <img src={AIImage} alt="Artificial Intelligence" />

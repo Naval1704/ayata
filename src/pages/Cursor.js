@@ -5,7 +5,7 @@ function Cursor() {
   useEffect(() => {
     const handleMouseMove = (event) => {
       var cursorShadow = document.querySelector('.cursor-shadow');
-      var radius = 400;
+      var radius = 200;
 
       var cursorX = event.clientX;
       var cursorY = event.clientY;

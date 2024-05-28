@@ -3,16 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
-  background-color: #1a1a1a; /* Smooth dark background color */
+  /* background-color: #1a1a1a; */
 }
 
 .home-content {
   text-align: center;
   color: #333; /* Slightly darker gray text color */
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   max-width: 900px; /* Increased max-width for larger content */
   padding: 0 3rem; /* Increased padding for better spacing */
 }
@@ -44,7 +44,7 @@
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-.animation-background {
+/* .animation-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,14 +63,14 @@
     #00062f,
     #00041f,
     #00020f
-  ); /* Dark gradient with lighter parts */
+  );
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   z-index: 0;
-  filter: blur(10px); /* Apply a blur filter to the animation background */
-}
+  filter: blur(10px); 
+} */
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -80,4 +80,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
