@@ -1,0 +1,12 @@
+.cursor-shadow {
+  position:fixed;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #e0f7fa 0%, rgba(21, 15, 63, 0) 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 100%;
+  z-index: -1;
+}

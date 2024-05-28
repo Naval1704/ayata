@@ -1,0 +1,73 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #1a1a1a; /* Smooth dark background color */
+  }
+  
+  .home-content {
+    text-align: center;
+    color: #333; /* Slightly darker gray text color */
+    position: relative;
+    z-index: 1;
+    max-width: 900px; /* Increased max-width for larger content */
+    padding: 0 3rem; /* Increased padding for better spacing */
+  }
+  
+  .home-content h1,
+  .home-content h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #fff; /* Golden yellow text color */
+  }
+  
+  .home-content p {
+    color: #f0f0f0; /* Light gray text color */
+    font-size: 1.3rem; /* Increased font size for better readability */
+  }
+  
+  .home-link {
+    display: inline-block;
+    padding: 1.2rem 3rem; /* Increased padding for larger button */
+    color: #fff;
+    background-color: #007bff; /* Vivid blue button color */
+    border-radius: 8px; /* Increased border-radius for a more rounded button */
+    text-decoration: none;
+    font-size: 1.2rem; /* Increased font size for better visibility */
+    transition: background-color 0.3s;
+  }
+  
+  .home-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .animation-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4caf50, #8bc34a, #ffeb3b, #ff9800, #ff5722, #f44336, #e91e63, #9c27b0, #673ab7, #3f51b5, #2196f3, #03a9f4, #00bcd4, #009688, #4caf50); /* Multicolor gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: 0;
+    filter: blur(10px); /* Apply a blur filter to the animation background */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
