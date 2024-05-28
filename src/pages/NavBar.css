@@ -3,7 +3,7 @@
   display: flex;
   width: 100%;
   box-sizing: border-box;
-  position: fixed; /* Fixed position for navbar */
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -21,15 +21,16 @@
 }
 
 .logo img {
-  height: 50px; /* Adjusted logo height */
+  height: 40px;
   margin-right: 0.5rem;
   transition: transform 0.3s;
 }
 
 .logo h2 {
   color: #2c3e50;
-  font-size: 1.5rem;
-  margin: 0; /* Remove margin for consistency */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .logo:hover img {
@@ -38,22 +39,21 @@
 
 .components {
   display: flex;
-  gap: 1rem; /* Increased gap between components */
+  gap: 2rem; /* Consistent gap */
 }
 
 .components a {
   color: #2c3e50;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
   transition: color 0.3s, transform 0.3s;
   position: relative;
-  padding: 0.5rem;
-  font-weight: bold; /* Added font weight for emphasis */
 }
 
 .components a:hover {
   color: #3498db;
-  transform: translateY(-2px);
+  transform: translateY(-3px); /* Improved hover effect */
 }
 
 .components a::after {
@@ -77,14 +77,17 @@
   .components {
     display: none;
     flex-direction: column;
-    gap: 0;
+    gap: 1rem; /* Consistent gap */
     background-color: #ffffff;
     width: 100%;
     text-align: center;
-    position: fixed; /* Change to fixed position */
-    top: 60px; /* Adjust top position to position below the navbar */
+    position: fixed;
+    top: 60px;
     left: 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hide initially */
+    pointer-events: none; /* Disable pointer events */
+    transition: opacity 0.3s ease; /* Smooth transition */
   }
 
   .navBar {
@@ -97,6 +100,8 @@
 
   .components.open {
     display: flex;
+    opacity: 1; /* Show when open */
+    pointer-events: auto; /* Enable pointer events */
   }
 }
 
@@ -113,9 +118,8 @@
   transition: 0.4s;
 }
 
-/* Mobile menu open state */
 .menu-toggle.open div:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .menu-toggle.open div:nth-child(2) {
@@ -123,14 +127,15 @@
 }
 
 .menu-toggle.open div:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    position: fixed; /* Ensure the toggle button is fixed */
-    top: 20px; /* Adjust top position for better alignment */
-    right: 20px; /* Align toggle button to the right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3; /* Ensure above other elements */
   }
 }

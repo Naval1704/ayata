@@ -1,0 +1,106 @@
+/* Services.css */
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  position: relative;
+}
+
+.content {
+    display: flex;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffcc00, #ff3300);
+  z-index: -1;
+  opacity: 0.8;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Services.css */
+
+.services-heading {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.service {
+  width: 45%;
+  margin: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service:hover img {
+  transform: scale(1.05);
+}
+
+.service-content {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.service-content h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.service:hover .service-content h2 {
+  color: #3498db;
+}
+
+.service-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.service:hover .service-content p {
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service {
+    width: 100%;
+  }
+}
