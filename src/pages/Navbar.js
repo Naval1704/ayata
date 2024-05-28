@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../pages/assets/logo.png';
 import './NavBar.css';
 
@@ -18,7 +19,7 @@ function NavBar() {
         </Link>
       </div>
       <div className={`components ${menuOpen ? 'open' : ''}`}>
-        <Link className="home" to="#home">
+        <Link className="home" to="#home" smooth >
             Home
         </Link>
         <Link className="services" to='#services' smooth >

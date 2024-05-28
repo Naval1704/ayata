@@ -3,7 +3,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="home-container">
+    <div id='home' className="home-container">
       <div className="home-content">
         <h1>AI is the BRAIN, IoT is the BODY</h1>
         <h2 style={{fontSize:'35px'}}>&</h2>
