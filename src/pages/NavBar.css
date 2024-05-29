@@ -10,7 +10,7 @@
   top: 0;
   background-color: rgba(224, 247, 250, 0); 
   backdrop-filter: blur(10px); 
-  /* -webkit-backdrop-filter: blur(10px); For Safari */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -78,17 +78,21 @@
   .components {
     display: none;
     flex-direction: column;
-    gap: 1rem; /* Consistent gap */
-    background-color: #ffffff;
+    gap: 2.5rem; 
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 100%;
     text-align: center;
     position: fixed;
-    top: 60px;
+    top: 90px;
     left: 0;
+    padding: 2rem 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Hide initially */
     pointer-events: none; /* Disable pointer events */
     transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: 1;
   }
 
   .navBar {
@@ -104,6 +108,10 @@
     opacity: 1; /* Show when open */
     pointer-events: auto; /* Enable pointer events */
   }
+
+  .components a {
+    color: #ffffff; /* Ensure text is white */
+  }
 }
 
 .menu-toggle {
@@ -114,7 +122,7 @@
 .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color: #2c3e50;
+  background-color: #ffffff; /* White color for better visibility */
   margin: 5px 0;
   transition: 0.4s;
 }

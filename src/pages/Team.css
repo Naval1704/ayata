@@ -1,0 +1,123 @@
+/* Team Section */
+.team-section {
+  padding: 4rem 2rem;
+  background: none; /* Transparent background */
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.team-heading {
+  font-size: 2.5rem;
+  color: #ffffff; /* White text color */
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  ); /* Gradient background */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px; /* Larger card size */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 0; /* Ensure it is behind the content */
+}
+
+.team-member:hover::before {
+  opacity: 1;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.team-member-image {
+  border-radius: 50%;
+  width: 150px; /* Larger image size */
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+  z-index: 1; /* Ensure image is above pseudo-element */
+}
+
+.team-member:hover .team-member-image {
+  transform: scale(1.1);
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  color: #ffffff; /* White text color */
+  margin: 0.5rem 0;
+  font-weight: bold;
+  z-index: 1; /* Ensure name is above pseudo-element */
+}
+
+.team-member-role {
+  font-size: 1.2rem;
+  color: #ffffff; /* White text color */
+  margin-bottom: 1rem;
+  z-index: 1; /* Ensure role is above pseudo-element */
+}
+
+.team-member-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(
+    to right,
+    #0077b5,
+    #005582
+  ); /* Gradient background */
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.3s;
+  position: relative; /* Ensure link is above pseudo-element */
+}
+
+.team-member-link:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .team-member {
+    max-width: 100%;
+  }
+}

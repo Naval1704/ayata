@@ -1,0 +1,117 @@
+.career-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* Light text color for better contrast */
+    background-size: cover;
+  }
+  
+  .career-box {
+    max-width: 70%; /* Increased maximum width */
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer box shadow */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .career-container-heading {
+    font-size: 2.5rem; /* Larger font size */
+    /* margin-bottom: 2rem; */
+  }
+  
+  .career-heading h1 {
+    margin-top: 5rem;
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .career-heading p {
+    font-size: 1.4rem; /* Larger font size */
+    line-height: 1.6; /* Improved line spacing for better readability */
+    margin-bottom: 2rem;
+  }
+  
+  .about-us-section {
+    margin-bottom: 3rem;
+    max-width: 60%; /* Limit width of About Us section */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.8rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-us-section p {
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.6; /* Improved line spacing for better readability */
+    margin-bottom: 2rem;
+  }
+  
+  .apply-button {
+    padding: 1.2rem 2.5rem; /* Increased padding */
+    font-size: 1.4rem; /* Larger font size */
+    font-weight: bold;
+    color: #fff; /* Darker text color */
+    background-color: #007bff; /* Light background color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+  }
+  
+  .apply-button:hover {
+    background-color: #d0d0d0; /* Darker shade on hover */
+  }
+  
+  .wave-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .career-box {
+      padding: 2rem;
+    }
+    
+    .career-container-heading {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .career-heading h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .career-heading p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .about-us-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .about-us-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .apply-button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }

@@ -1,3 +1,4 @@
+// App.js
 import React from "react";
 import Home from './pages/Home';
 import NavBar from './pages/Navbar';
@@ -11,11 +12,12 @@ import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Client from './pages/Client';
 import Footer from './pages/Footer';
-// import Stars from "./pages/Stars";
+import ShootingStar from "./pages/ShootingStar";
+
 function App() {
   return (
     <div className="App">
-      {/* <Stars/> */}
+      <ShootingStar />
       <Cursor/>
       <NavBar/>
       <div className="pages">
