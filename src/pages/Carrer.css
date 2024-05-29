@@ -63,12 +63,14 @@
     border: none;
     border-radius: 25px; /* Rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s;
+    position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
   }
   
   .apply-button:hover {
-    background-color: #d0d0d0; /* Darker shade on hover */
+    transform: translateY(-3px);
+    background-color: #0056b3;
   }
   
   .wave-image {

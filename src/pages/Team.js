@@ -1,25 +1,28 @@
 import React from 'react';
 import './Team.css';
+import sanchit from "../pages/assets/founder-sanchit.jpg";
+import arpit from "../pages/assets/founder-arpit.jpg";
+import mamatha from "../pages/assets/advisor-mamatha.jpg";
 
 // Sample team data
 const teamMembers = [
   {
     name: "Sanchit Agarwal",
     role: "Co-Founder",
-    image: "https://via.placeholder.com/150",
+    image: sanchit,
     linkedin: "https://www.linkedin.com/in/sanchit-aggarwal/"
   },
   {
     name: "Arpit Jain",
     role: "Co-Founder",
-    image: "https://via.placeholder.com/150",
+    image: arpit,
     linkedin: "https://www.linkedin.com/in/jarpit91/"
   },
   {
     name: "Dr Mamatha Raghu",
-    role: "Lead Advisor",
-    image: "https://via.placeholder.com/150",
-    linkedin: "https://www.linkedin.com/in/mikejohnson"
+    role: "Advisor",
+    image: mamatha,
+    linkedin: "https://www.linkedin.com/in/mamatha-alugubelly-9b36b0124/?originalSubdomain=in"
   },
 ];
 

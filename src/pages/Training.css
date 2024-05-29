@@ -1,0 +1,133 @@
+.training-page {
+  padding: 2rem;
+  text-align: center;
+  background: none;
+  margin-bottom: 80px;
+}
+
+.training-heading {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.course-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+  width: 300px;
+  padding: 15px;
+  color: white;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.course-title {
+  font-size: 1.5em;
+  margin: 15px 0 10px;
+}
+
+.course-description {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.course-duration,
+.course-price {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.enroll-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+}
+
+.instructors-heading {
+  font-size: 2em;
+  margin: 40px 0 20px;
+  color: #ffffff;
+}
+
+.instructors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.instructor-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+  width: 250px;
+  padding: 15px;
+  color: white;
+}
+
+.instructor-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.instructor-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.instructor-name {
+  font-size: 1.2em;
+  margin: 15px 0 10px;
+}
+
+.instructor-course {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .courses,
+  .instructors {
+    flex-direction: column;
+    align-items: center;
+  }
+}

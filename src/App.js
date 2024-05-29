@@ -22,13 +22,13 @@ function App() {
       <NavBar/>
       <div className="pages">
           <Home/>
+          <Training/>
           <Services/>
           <Products/>
-          <Training/>
           <Achievements/>
           <Team/>
-          <Career/>
           <Client/>
+          <Career/>
           <Contact/>
       </div>
       <Footer/>

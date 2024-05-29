@@ -1,6 +1,6 @@
 /* Team Section */
 .team-section {
-  padding: 4rem 2rem;
+  padding: 2rem;
   background: none; /* Transparent background */
   text-align: center;
   margin-bottom: 70px;
@@ -21,21 +21,15 @@
 }
 
 .team-member {
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.05)
-  ); /* Gradient background */
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 300px; /* Larger card size */
-  text-align: center;
-  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+  width: 250px;
+  padding: 15px;
+  color: white;
 }
 
 .team-member::before {
@@ -63,12 +57,12 @@
 
 .team-member-image {
   border-radius: 50%;
-  width: 150px; /* Larger image size */
+  width: 150px;
   height: 150px;
   object-fit: cover;
   margin-bottom: 1rem;
   transition: transform 0.3s;
-  z-index: 1; /* Ensure image is above pseudo-element */
+  z-index: 1; 
 }
 
 .team-member:hover .team-member-image {
@@ -97,13 +91,13 @@
     to right,
     #0077b5,
     #005582
-  ); /* Gradient background */
+  ); 
   color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
   transition: transform 0.3s;
-  position: relative; /* Ensure link is above pseudo-element */
+  position: relative;
 }
 
 .team-member-link:hover {

@@ -24,14 +24,14 @@ function NavBar() {
         <Link className="home" to='#' smooth onClick={closeMenu}>
             Home
         </Link>
+        <Link className="training" to="#training" smooth onClick={closeMenu}>
+            Training
+        </Link>
         <Link className="services" to="#services" smooth onClick={closeMenu}>
             Services
         </Link>
         <Link className="products" to="#products" smooth onClick={closeMenu}>
             Products
-        </Link>
-        <Link className="training" to="#training" smooth onClick={closeMenu}>
-            Training
         </Link>
         <Link className="achievements" to="#achievements" smooth onClick={closeMenu}>
             Achievements
@@ -39,14 +39,14 @@ function NavBar() {
         <Link className="team" to="#team" smooth onClick={closeMenu}>
             Team
         </Link>
+        <Link className="clients" to="#clients" smooth onClick={closeMenu}>
+            Our Clients
+        </Link>
         <Link className="careers" to="#careers" smooth onClick={closeMenu}>
             Career
         </Link>
         <Link className="contacts" to="#contacts" smooth onClick={closeMenu}>
             Contact Us
-        </Link>
-        <Link className="clients" to="#clients" smooth onClick={closeMenu}>
-            Our Clients
         </Link>
       </div>
       <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={handleToggle}>

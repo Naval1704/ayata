@@ -14,20 +14,20 @@ body {
   height: 100%;
   background: linear-gradient(
     45deg,
-    #00020f,
-    #00041f,
-    #00062f,
-    #001f3f,
-    #003d9f,
-    #0058ff,
-    #003d9f,
-    #001f3f,
-    #00062f,
-    #00041f,
-    #00040f
-  ); /* Dark gradient with lighter parts */
+    #00010a,
+    #00021a,
+    #00032a,
+    #00054a,
+    #001a9a,
+    #0038ff,
+    #001a9a,
+    #00054a,
+    #00032a,
+    #00021a,
+    #00010a
+  ); /* Darker navy blue gradient with more variation */
   background-size: 500% 500%;
-  animation: gradientAnimation 20s ease infinite;
+  animation: gradientAnimation 15s ease infinite;
   z-index: -1;
 }
 
