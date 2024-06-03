@@ -3,8 +3,8 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className="contact-container">
-      <h1>Contact Us</h1>
+    <div id='contacts' className="contact-container">
+      <h1 className='contact-container-heading'>Contact Us</h1>
       <div className="blur-background"></div> {/* Transparent background overlay */}
       <div className="contact-content">
         <div className="contact-info">

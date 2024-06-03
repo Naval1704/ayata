@@ -1,15 +1,17 @@
 .home-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  /* background: linear-gradient(45deg, #0f2027, #203a43, #2c5364); */
+  background-image: linear-gradient(to bottom, #E1F2F7, #e6e6e6);
+  /* background-image: url('../pages/background_Image/home_robo.png'); */
+  background-size: 150% auto;
 }
 
 .home-content {
-  text-align: center;
+  /* text-align: center; */
   color: #fff; /* White text color for better contrast */
   position: relative;
   z-index: 1;
@@ -21,24 +23,51 @@
 .home-content h2 {
   font-size: 3rem;
   margin: 0;
-  color: #fff; /* White text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
+  /* color: #fff;  */
+  color: #121313;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.tech {
+  font-size: 70px;
+  color: #C13F17;
+}
+
+.us {
+  font-size: 80px;
+  color: #005BAB;
+}
+
+.separator {
+  padding-left: 30px;
+  font-size: 100px;
 }
 
 .home-content p {
-  color: #f0f0f0; /* Light gray text color */
-  font-size: 1.3rem; /* Increased font size for better readability */
+  /* color: #f0f0f0;  */
+  color: #373737;
+  font-size: 1.2rem; /* Increased font size for better readability */
   margin: 1rem 0;
+}
+
+.fine {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .home-link {
   display: inline-block;
   padding: 1rem 2.5rem; /* Adjusted padding for better spacing */
   color: #fff;
-  background-color: #007bff; /* Vivid blue button color */
+  background-color: #EA445A; /* Vivid blue button color */
   border-radius: 8px; /* Increased border-radius for a more rounded button */
   text-decoration: none;
-  font-size: 1.2rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  /* background-image: linear-gradient(to bottom, #001f3f, #800080); */
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.8);
   transition: background-color 0.3s, transform 0.3s; /* Added transform transition for smooth scaling */
 }
 
@@ -57,6 +86,19 @@
     font-size: 2.5rem;
   }
 
+  .tech {
+    font-size: 3.5rem;
+    color: #C13F17;
+  }
+  
+  .us {
+    font-size: 4.5rem;
+    color: #005BAB;
+  }
+  .separator {
+    padding-left: 30px;
+    font-size: 5.5rem;
+  }
   .home-content p {
     font-size: 1.2rem;
   }
@@ -77,6 +119,20 @@
     font-size: 2rem;
   }
 
+  .tech {
+    font-size: 2.5rem;
+    color: #C13F17;
+  }
+  
+  .us {
+    font-size: 2.5rem;
+    color: #005BAB;
+  }
+  .separator {
+    padding-left: 15px;
+    font-size: 2.5rem;
+  }
+
   .home-content p {
     font-size: 1.1rem;
   }
@@ -90,6 +146,20 @@
 @media (max-width: 480px) {
   .home-content {
     padding: 0 1rem;
+  }
+
+  .tech {
+    font-size: 2.0rem;
+    color: #C13F17;
+  }
+  
+  .us {
+    font-size: 2.0rem;
+    color: #005BAB;
+  }
+  .separator {
+    padding-left: 10px;
+    font-size: 2.5rem;
   }
 
   .home-content h1,

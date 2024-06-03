@@ -1,8 +1,6 @@
 import React from "react";
-import "../pages/Footer.css";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io";
+import "./Footer.css"; 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
@@ -11,7 +9,9 @@ function Footer() {
         <div className="footer-section about-us">
           <h3>About Us</h3>
           <p>
-          Ayata Intelligence strives to create products and services that create a positive impact by leveraging the benefits of Artificial intelligence, computer vision and Machine learning.
+            Ayata Intelligence strives to create products and services that
+            create a positive impact by leveraging the benefits of Artificial
+            Intelligence, computer vision, and Machine learning.
           </p>
         </div>
         <div className="footer-section contact-us">
@@ -21,17 +21,15 @@ function Footer() {
         </div>
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <IoLogoLinkedin className="social-icon" />
-            </a>
-          </div>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            Youtube
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            Linkedin
+          </a>
+          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            Github
+          </a>
         </div>
       </div>
     </footer>

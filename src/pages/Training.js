@@ -96,7 +96,7 @@ function Training() {
         spaceBetween={10}
         pagination={{ clickable: true }}
         navigation={true}
-        autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto play every 5 seconds
+        autoplay={{ delay: 4000, disableOnInteraction: false }} // Auto play every 5 seconds
         className="mySwiper"
       >
         {courses.map((course, index) => (
@@ -134,7 +134,7 @@ function Training() {
             />
             <h3 className="instructor-name">{instructor.name}</h3>
             <p className="instructor-course">
-              <strong>Course:</strong> {instructor.course}
+              <strong><span className="ccl">Course:</span></strong> {instructor.course}
             </p>
           </div>
         ))}

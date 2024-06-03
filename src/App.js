@@ -2,7 +2,7 @@
 import React from "react";
 import Home from './pages/Home';
 import NavBar from './pages/Navbar';
-import Cursor from './pages/Cursor';
+// import Cursor from './pages/Cursor';
 import Services from './pages/Services';
 import Products from './pages/Products';
 import Training from './pages/Training';
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <ShootingStar />
-      <Cursor/>
+      {/* <Cursor/> */}
       <NavBar/>
       <div className="pages">
           <Home/>

@@ -21,16 +21,13 @@ function Products() {
         <div className="upper-mid">
           <section className="product-section">
             <h2>Inspiration - Origination of Idea!</h2>
-            <ul className="facts-list">
-              <li>
-                Over 285 million visually differently-abled worldwide (WHO,
-                2010)
-              </li>
-              <li>
-                Number estimated to double by 2020 due to demographic shifts
-              </li>
-              <li>Current tools are basic, bulky, expensive, or inefficient</li>
-            </ul>
+            <p className="product-description">
+              Over 285 million people worldwide are visually impaired, a number
+              expected to double by 2020 due to demographic changes, according
+              to WHO (2010). Current tools available for the visually impaired
+              are often basic, bulky, expensive, or inefficient, highlighting a
+              significant need for better solutions.
+            </p>
           </section>
           <section className="product-overview">
             <h2>Insight - An Overview of ViShruti™</h2>
@@ -59,35 +56,54 @@ function Products() {
             capabilities, thus leading an independent and digitally connected
             life.
           </p>
-          <a href="https://example.com/video-link" className="video-link">
-            Watch Video
-          </a>
+          <div class="video-container">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/Mad8x4azJjc"
+                title="ViShruti™ Smart Eyewear for Visually Differently abled"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/ik5HO4VjMsk"
+                title="ViShruti™ Seeing through Listening Ayata Intelligence"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
         <section className="product-differentiators">
-        <h2>Why ViShruti™?</h2>
-        <div className="differentiators-grid">
-          <div className="differentiator">
-            <img src={aiIcon} alt="AI Icon" />
-            <p>Uses Artificial Intelligence</p>
+          <h2>Why ViShruti™?</h2>
+          <div className="differentiators-grid">
+            <div className="differentiator">
+              <img src={aiIcon} alt="AI Icon" />
+              <p>Uses Artificial Intelligence</p>
+            </div>
+            <div className="differentiator">
+              <img src={userIcon} alt="User Icon" />
+              <p>User friendly in small form factor</p>
+            </div>
+            <div className="differentiator">
+              <img src={timeIcon} alt="Time Icon" />
+              <p>Efficient time management</p>
+            </div>
+            <div className="differentiator">
+              <img src={costIcon} alt="Cost Icon" />
+              <p>Less expensive compared to competitors</p>
+            </div>
+            <div className="differentiator">
+              <img src={collaborationIcon} alt="Collaboration Icon" />
+              <p>Encourages collaboration & data sharing</p>
+            </div>
           </div>
-          <div className="differentiator">
-            <img src={userIcon} alt="User Icon" />
-            <p>User friendly in small form factor</p>
-          </div>
-          <div className="differentiator">
-            <img src={timeIcon} alt="Time Icon" />
-            <p>Efficient time management</p>
-          </div>
-          <div className="differentiator">
-            <img src={costIcon} alt="Cost Icon" />
-            <p>Less expensive compared to competitors</p>
-          </div>
-          <div className="differentiator">
-            <img src={collaborationIcon} alt="Collaboration Icon" />
-            <p>Encourages collaboration & data sharing</p>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
     </div>
   );

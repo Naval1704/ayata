@@ -4,28 +4,30 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  margin-bottom: 60px;
-  color: #fff;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, #E1F2F7, #e6e6e6);
+  animation: colorChange 5s infinite alternate;
+  background-size: 100% auto; 
 }
 
 .team-heading {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  color: #0F2557;
 }
 
 .team-members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   gap: 2rem;
 }
 
 .team-member {
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #101820;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.8);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 250px;
@@ -34,27 +36,10 @@
   position: relative;
 }
 
-.team-member::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.1);
-  transform: rotate(45deg);
-  transition: opacity 0.3s;
-  opacity: 0;
-  z-index: 0; /* Ensure it is behind the content */
-}
-
-.team-member:hover::before {
-  opacity: 1;
-}
-
 .team-member:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: #001730;
 }
 
 .team-member-image {
@@ -75,6 +60,7 @@
   font-size: 1.5rem;
   margin: 0.5rem 0;
   font-weight: bold;
+  color: #FEE715;
   z-index: 1;
 }
 

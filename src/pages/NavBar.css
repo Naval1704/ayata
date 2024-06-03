@@ -8,9 +8,7 @@
   align-items: center;
   padding: 1rem 2rem;
   top: 0;
-  background-color: rgba(224, 247, 250, 0); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background-color: #FFFFFF;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -28,10 +26,16 @@
 }
 
 .logo h2 {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #192532;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
+  transition: transform 0.3s;
+}
+
+.logo h2:hover {
+  transform: scale(1.1);
 }
 
 .logo:hover img {
@@ -44,16 +48,18 @@
 }
 
 .components a {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #013A74;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   transition: color 0.3s, transform 0.3s;
   position: relative;
 }
 
 .components a:hover {
-  color: #3498db;
+  color: #101820;
+  /* font-weight: bold; */
   transform: translateY(-3px); /* Improved hover effect */
 }
 
@@ -100,7 +106,10 @@
   }
 
   .logo {
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
+  }
+  .logo h2{
+    font-size: 2.0rem;
   }
 
   .components.open {
@@ -122,7 +131,7 @@
 .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color: #ffffff; /* White color for better visibility */
+  background-color: #192532; /* White color for better visibility */
   margin: 5px 0;
   transition: 0.4s;
 }
