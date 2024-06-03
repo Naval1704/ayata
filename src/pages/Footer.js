@@ -11,8 +11,7 @@ function Footer() {
         <div className="footer-section about-us">
           <h3>About Us</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ayata Intelligence strives to create products and services that create a positive impact by leveraging the benefits of Artificial intelligence, computer vision and Machine learning.
           </p>
         </div>
         <div className="footer-section contact-us">

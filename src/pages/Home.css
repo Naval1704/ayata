@@ -3,81 +3,106 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
-  /* background-color: #1a1a1a; */
+  /* background: linear-gradient(45deg, #0f2027, #203a43, #2c5364); */
 }
 
 .home-content {
   text-align: center;
-  color: #333; /* Slightly darker gray text color */
+  color: #fff; /* White text color for better contrast */
   position: relative;
-  /* z-index: 1; */
+  z-index: 1;
   max-width: 900px; /* Increased max-width for larger content */
   padding: 0 3rem; /* Increased padding for better spacing */
 }
 
 .home-content h1,
 .home-content h2 {
-  font-size: 40px;
+  font-size: 3rem;
   margin: 0;
   color: #fff; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
 }
 
 .home-content p {
   color: #f0f0f0; /* Light gray text color */
   font-size: 1.3rem; /* Increased font size for better readability */
+  margin: 1rem 0;
 }
 
 .home-link {
   display: inline-block;
-  padding: 1.2rem 3rem; /* Increased padding for larger button */
+  padding: 1rem 2.5rem; /* Adjusted padding for better spacing */
   color: #fff;
   background-color: #007bff; /* Vivid blue button color */
   border-radius: 8px; /* Increased border-radius for a more rounded button */
   text-decoration: none;
   font-size: 1.2rem; /* Increased font size for better visibility */
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform transition for smooth scaling */
 }
 
 .home-link:hover {
   background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
 }
 
-/* .animation-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    #00020f,
-    #00041f,
-    #00062f,
-    #001f3f,
-    #003d9f,
-    #0058ff,
-    #003d9f,
-    #001f3f,
-    #00062f,
-    #00041f,
-    #00020f
-  );
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
-  z-index: 0;
-  filter: blur(10px); 
-} */
+@media (max-width: 1024px) {
+  .home-content {
+    padding: 0 2rem;
+  }
 
-/* @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
+  .home-content h1,
+  .home-content h2 {
+    font-size: 2.5rem;
   }
-  50% {
-    background-position: 100% 50%;
+
+  .home-content p {
+    font-size: 1.2rem;
   }
-  100% {
-    background-position: 0% 50%;
+
+  .home-link {
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
   }
-} */
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 0 1.5rem;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .home-link {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 0 1rem;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .home-link {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
+}

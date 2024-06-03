@@ -1,12 +1,13 @@
-/* Services.css */
-
+/* Base styles */
 .services-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background: none;
   margin-bottom: 60px;
+  color: #fff;
+  background: none;
+  background-size: cover;
 }
 
 .services-heading {
@@ -14,8 +15,6 @@
   color: #fff;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  /* border-bottom: 2px solid #ffffff; */
-  /* padding-bottom: 0.5rem; */
 }
 
 .content {
@@ -42,7 +41,7 @@
 
 .service img {
   width: 100%;
-  height: auto;
+  height: 250px; /* Set a fixed height for images */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -54,6 +53,7 @@
 .service-content {
   padding: 1.5rem;
   background-color: transparent;
+  text-align: center;
 }
 
 .service-content h2 {
@@ -70,7 +70,36 @@
 }
 
 /* Responsive Design */
+
+/* For medium screens */
+@media (max-width: 1024px) {
+  .service {
+    max-width: 45%;
+  }
+  
+  .services-heading {
+    font-size: 2.2rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* For small screens */
 @media (max-width: 768px) {
+  .content {
+    gap: 1.5rem;
+  }
+
+  .service {
+    max-width: 90%;
+  }
+
   .services-heading {
     font-size: 2rem;
   }
@@ -84,9 +113,22 @@
   }
 }
 
+/* For extra small screens */
 @media (max-width: 480px) {
+  .services-container {
+    padding: 1rem;
+  }
+
   .services-heading {
     font-size: 1.8rem;
+  }
+
+  .service {
+    max-width: 100%;
+  }
+
+  .service img {
+    height: 200px; /* Adjust image height for smaller screens */
   }
 
   .service-content h2 {

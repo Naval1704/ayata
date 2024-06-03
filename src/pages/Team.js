@@ -8,13 +8,13 @@ import mamatha from "../pages/assets/advisor-mamatha.jpg";
 const teamMembers = [
   {
     name: "Sanchit Agarwal",
-    role: "Co-Founder",
+    role: "Consultant",
     image: sanchit,
     linkedin: "https://www.linkedin.com/in/sanchit-aggarwal/"
   },
   {
     name: "Arpit Jain",
-    role: "Co-Founder",
+    role: "Advisor",
     image: arpit,
     linkedin: "https://www.linkedin.com/in/jarpit91/"
   },

@@ -1,0 +1,123 @@
+/* Client.css */
+
+.client-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.client-container h1 {
+  font-size: 2.5rem;
+  color: #ffffff; /* White text color */
+  margin-bottom: 2rem;
+}
+
+.client-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.client-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 300px; /* Maximum width for larger screens */
+  text-align: left;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Client.css */
+
+.client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Adjusting object-fit property */
+  transition: transform 0.3s ease;
+}
+
+.client-image-container {
+  width: 100%;
+  height: 200px; /* Adjusted height for better visibility */
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.client-card:hover .client-image {
+  transform: scale(1.05);
+}
+
+.client-details {
+  padding: 1.5rem;
+}
+
+.client-details h2 {
+  font-size: 1.8rem;
+  color: #ffffff; /* White text color */
+  margin-bottom: 1rem;
+}
+
+.client-details p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+@media (max-width: 1024px) {
+  .client-container {
+    padding: 1.5rem;
+  }
+
+  .client-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .client-details h2 {
+    font-size: 1.6rem;
+  }
+
+  .client-details p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-card {
+    max-width: 100%; /* Adjusted width for smaller screens */
+  }
+
+  .client-container h1 {
+    font-size: 2rem;
+  }
+
+  .client-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .client-details p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .client-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .client-details p {
+    font-size: 0.85rem;
+  }
+}

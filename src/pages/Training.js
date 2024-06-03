@@ -1,36 +1,68 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./Training.css";
 import AI_training from "../pages/assets/AI_training.jpg";
-import ML_training from "../pages/assets/Machine_Learning_training.jpg";
 import IOT_training from "../pages/assets/IOT_training.jpg";
+import IOT_adv from "../pages/assets/IOT_adv.jpg";
+import AI_ML from "../pages/assets/AI_ML.jpg";
+import business from "../pages/assets/Bussiness_ana.jpg";
+import dm from "../pages/assets/Digital_Mark.jpg";
 import sanchit from "../pages/assets/founder-sanchit.jpg";
 import arpit from "../pages/assets/founder-arpit.jpg";
 import mamatha from "../pages/assets/advisor-mamatha.jpg";
 
 const courses = [
   {
-    title: "Artificial Intelligence",
+    title: "Introduction to AI & Machine Learning",
+    image: AI_ML,
+    description:
+      "Embark on your journey into the fascinating world of artificial intelligence and machine learning. Explore the foundational concepts, algorithms, and applications that are revolutionizing industries and shaping the future.",
+    duration: "2 Months",
+    price: "Rs 800",
+  },
+  {
+    title: "Advanced AI & Machine Learning",
     image: AI_training,
     description:
-      "Learn the fundamentals and advanced concepts of AI, transforming the way we interact with technology.",
-    duration: "1 Months",
-    price: "Rs 500",
+      "Take your AI and machine learning skills to the next level with advanced techniques and real-world applications. Dive deep into deep learning, reinforcement learning, and more, and unleash the full potential of intelligent systems.",
+    duration: "2.5 Months",
+    price: "Rs 1500",
   },
   {
-    title: "Internet of Things",
+    title: "Fundamentals of IoT",
     image: IOT_training,
     description:
-      "Explore the interconnected world of IoT and understand how devices communicate and work together.",
-    duration: "3 Months",
-    price: "Rs 500",
+      "Discover the fundamentals of the Internet of Things and learn how connected devices are transforming our world. From sensors to cloud computing, gain the knowledge and skills to build innovative IoT solutions.",
+    duration: "2 Months",
+    price: "Rs 800",
   },
   {
-    title: "Machine Learning",
-    image: ML_training,
+    title: "Advanced IoT Solutions",
+    image: IOT_adv,
     description:
-      "Master the skills of Machine Learning to create intelligent systems and predictive models.",
+      "Master the design and implementation of advanced IoT solutions that drive innovation and efficiency. Explore topics such as edge computing, IoT security, and data analytics, and lead the way in the IoT revolution.",
+    duration: "3 Months",
+    price: "Rs 1200",
+  },
+  {
+    title: "Business Intelligence & Analytics",
+    image: business,
+    description:
+      "Gain the insights and skills needed to drive strategic decisions and business growth through data-driven analysis. From predictive analytics to data visualization, master the tools and techniques used by top business analysts to unlock the full potential of data.",
+    duration: "2.5 Months",
+    price: "Rs 1200",
+  },
+  {
+    title: "Digital Marketing Mastery",
+    image: dm,
+    description:
+      "Become a digital marketing expert and elevate your online presence with cutting-edge strategies and techniques. From SEO to social media marketing, learn how to reach your audience effectively, optimize campaigns, and drive business success in the digital age.",
     duration: "2 Months",
-    price: "Rs 500",
+    price: "Rs 1000",
   },
 ];
 
@@ -58,26 +90,39 @@ function Training() {
       <h1 className="training-heading">
         Enhance Your Skills with Our Expert Training Courses
       </h1>
-      <div className="courses">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{ clickable: true }}
+        navigation={true}
+        autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto play every 5 seconds
+        className="mySwiper"
+      >
         {courses.map((course, index) => (
-          <div className="course-card" key={index}>
-            <img
-              src={course.image}
-              alt={course.title}
-              className="course-image"
-            />
-            <h2 className="course-title">{course.title}</h2>
-            <p className="course-description">{course.description}</p>
-            <p className="course-duration">
-              <strong>Duration:</strong> {course.duration}
-            </p>
-            <p className="course-price">
-              <strong>Price:</strong> {course.price}
-            </p>
-            <button className="enroll-button">Enroll Now</button>
-          </div>
+          <SwiperSlide key={index}>
+            <div className="course-card">
+              <img
+                src={course.image}
+                alt={course.title}
+                className="course-image"
+              />
+              <div className="course-details">
+                <h2 className="course-title">{course.title}</h2>
+                <p className="course-description">{course.description}</p>
+                {/* <p className="course-duration">
+                  <strong>Duration:</strong> {course.duration}
+                </p>
+                <p className="course-price">
+                  <strong>Price:</strong> {course.price}
+                </p> */}
+                <button className="enroll-button">Enroll Now</button>
+              </div>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
+
       <h2 className="instructors-heading">Meet Our Expert Instructors</h2>
       <div className="instructors">
         {instructors.map((instructor, index) => (

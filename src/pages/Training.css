@@ -1,3 +1,4 @@
+/* Base styles */
 .training-page {
   padding: 2rem;
   text-align: center;
@@ -11,24 +12,21 @@
   margin-bottom: 20px;
 }
 
-.courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
+.mySwiper {
+  padding-bottom: 40px;
 }
 
 .course-card {
+  height: 500px; /* Fixed height for consistency */
+  display: flex;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s, background 0.3s;
-  width: 300px;
-  padding: 15px;
-  color: white;
+  max-width: 50%;
+  margin: 0 auto 30px;
 }
 
 .course-card:hover {
@@ -37,26 +35,34 @@
 }
 
 .course-image {
-  width: 100%;
-  height: 180px;
+  width: 50%; /* Take half width of parent */
+  height: 100%; /* Take full height of parent */
   object-fit: cover;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.course-details {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
 }
 
 .course-title {
   font-size: 1.5em;
-  margin: 15px 0 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .course-description {
   font-size: 1em;
-  margin: 10px 0;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .course-duration,
 .course-price {
   font-size: 1em;
-  margin: 5px 0;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .enroll-button {
@@ -97,6 +103,7 @@
   width: 250px;
   padding: 15px;
   color: white;
+  margin: 0 20px;
 }
 
 .instructor-card:hover {
@@ -111,7 +118,6 @@
   object-fit: cover;
   margin-bottom: 1rem;
   transition: transform 0.3s;
-  z-index: 1;
 }
 
 .instructor-name {
@@ -124,10 +130,84 @@
   margin: 10px 0;
 }
 
-@media (max-width: 768px) {
-  .courses,
-  .instructors {
+/* Responsive adjustments for medium screens */
+@media (max-width: 1024px) {
+  .training-heading {
+    font-size: 2em;
+  }
+
+  .course-card {
+    max-width: 70%;
+    height: auto;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .course-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .training-page {
+    padding: 1rem;
+  }
+
+  .training-heading {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .course-card {
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .course-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .course-details {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .instructor-card {
+    width: 80%;
+  }
+
+  .instructors-heading {
+    font-size: 1.5em;
+  }
+}
+
+/* Responsive adjustments for extra small screens */
+@media (max-width: 480px) {
+  .training-page {
+    padding: 0.5rem;
+  }
+
+  .training-heading {
+    font-size: 1.5em;
+  }
+
+  .course-card {
+    max-width: 100%;
+  }
+
+  .course-details {
+    padding: 10px;
+  }
+
+  .instructor-card {
+    width: 100%;
+  }
+
+  .instructors-heading {
+    font-size: 1.2em;
   }
 }
