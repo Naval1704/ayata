@@ -5,7 +5,7 @@
   align-items: center;
   padding: 2rem;
   color: #fff;
-  position: relative;
+  /* position: relative; */
   background-image: linear-gradient(to bottom, #e6e6e6, #E1F2F7);
   animation: colorChange 5s infinite alternate;
   background-size: 150% auto; 
@@ -145,6 +145,10 @@ button:active {
 @media (max-width: 576px) {
   .contact-container {
     padding: 2rem;
+  }
+
+  .contact-container-heading{
+    font-size: 2.5rem;
   }
   
   .contact-content {

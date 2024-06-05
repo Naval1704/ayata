@@ -4,6 +4,7 @@ import ach1 from "../pages/assets/180123_IWC_HalloFame201816.png";
 import ach2 from "../pages/assets/Maker-Lab_shartup_demo_photo1-1024x683.webp";
 import ach3 from "../pages/assets/vishruti_big_1510038409767.webp";
 import ach4 from "../pages/assets/MassChallenge-NATO-Announcement-Blog.png";
+import ach5 from "../pages/assets/patent.jpeg";
 
 function Achievements() {
   const achievements = [
@@ -35,6 +36,14 @@ function Achievements() {
         "Ayata Intelligence (P) Ltd. (India) Making AI products and services that create a positive impact.",
       link: "https://masschallenge.org/news/masschallenge-switzerland-announces-2017-class/",
     },
+    {
+      image: ach5,
+      title: "Granted Patent on ViShruti",
+      description:
+        "ViShruti™, seeing through listening, smart eyewear to help visually differentlyable to navigate and do their day to day activites using AI and IoT.",
+      link: "https://www.linkedin.com/posts/sanchit-aggarwal_innovationjourney-vishruti-ayataintelligence-activity-7171525024590368768-X82j?utm_source=share&utm_medium=member_desktop",
+    },
+
     // Add more achievements here
   ];
 

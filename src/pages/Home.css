@@ -4,10 +4,11 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   background-image: linear-gradient(to bottom, #E1F2F7, #e6e6e6);
-  /* background-image: url('../pages/background_Image/home_robo.png'); */
-  background-size: 150% auto;
+  background-image: url('../pages/background_Image/home.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .home-content {
@@ -29,24 +30,24 @@
 }
 
 .tech {
-  font-size: 70px;
+  font-size: 50px;
   color: #C13F17;
 }
 
 .us {
-  font-size: 80px;
+  font-size: 60px;
   color: #005BAB;
 }
 
 .separator {
-  padding-left: 30px;
-  font-size: 100px;
+  padding-left: 25px;
+  font-size: 70px;
 }
 
 .home-content p {
   /* color: #f0f0f0;  */
   color: #373737;
-  font-size: 1.2rem; /* Increased font size for better readability */
+  font-size: 1.1rem; /* Increased font size for better readability */
   margin: 1rem 0;
 }
 

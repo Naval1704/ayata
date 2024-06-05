@@ -96,7 +96,6 @@
     padding: 2rem 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Hide initially */
-    pointer-events: none; /* Disable pointer events */
     transition: opacity 0.3s ease; /* Smooth transition */
     z-index: 1;
   }
@@ -109,13 +108,12 @@
     margin-bottom: 0.1rem;
   }
   .logo h2{
-    font-size: 2.0rem;
+    font-size: 1.5rem;
   }
 
   .components.open {
     display: flex;
     opacity: 1; /* Show when open */
-    pointer-events: auto; /* Enable pointer events */
   }
 
   .components a {
@@ -125,7 +123,6 @@
 
 .menu-toggle {
   display: none;
-  cursor: pointer;
 }
 
 .menu-toggle div {

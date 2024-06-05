@@ -6,7 +6,7 @@
   flex-direction: column;
   color: #fff; /* Light text color for better contrast */
   background-size: cover;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   padding: 2rem;
   background-image: linear-gradient(to bottom, #e6e6e6, #E1F2F7);
   animation: colorChange 5s infinite alternate;

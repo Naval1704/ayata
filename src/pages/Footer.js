@@ -1,6 +1,8 @@
 import React from "react";
-import "./Footer.css"; 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "./Footer.css";
+import { GrYoutube } from "react-icons/gr";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -21,14 +23,29 @@ function Footer() {
         </div>
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-            Youtube
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <GrYoutube />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-            Linkedin
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaLinkedinIn />
           </a>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-            Github
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaGithub />
           </a>
         </div>
       </div>

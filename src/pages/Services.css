@@ -46,8 +46,8 @@
 }
 
 .service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.8);
+  background: #001730;
+  transform: scale(1);
 }
 
 .service img {
